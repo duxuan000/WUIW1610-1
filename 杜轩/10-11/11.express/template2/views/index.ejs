@@ -1,0 +1,16 @@
+<% include header %>
+        <h1><%=h1%></h1>
+        <p><%=description%></p>
+
+        <% if(keywords){%>
+       <div><%=keywords%></div>
+        <%}%>
+        <%#这是假的注视%>
+        <!--这是假的注视，真的在上面-->
+        <ul>
+        <% for(var i=0;i<list.length;i++){%>
+            <li><%=list[i]%></li>
+        <%}%>
+        </ul>
+
+<% include footer %>
